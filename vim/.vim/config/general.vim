@@ -1,6 +1,3 @@
-"  use Vim settings, rather than Vi settings
-set nocompatible
-
 " =========== General config ===========
 
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
@@ -33,27 +30,12 @@ set linebreak
 " to display status line
 set laststatus=2
 
-" =========== Setup Vundle ==========
-filetype off
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" load plugins
-so ~/.vim/bundle/plugins.vim
-
-filetype on           " Enable filetype detection
-filetype indent on    " Enable filetype-specific indenting
-filetype plugin on    " Enable filetype-specific plugins
-
 " =========== Color scheme ==========
 "
 " these settings should be AFTER vundle as solarized is installed as a plugin
 se t_Co=16
 let g:solarized_termcolors=256
 colorscheme solarized
-
-set guifont=Monaco:h13 " set font for MacVim
 
 " =========== Indentation ===========
 set autoindent    " always set autoindenting on
@@ -97,23 +79,3 @@ set sidescroll=1
 
 " =========== Tags ===============
 set tags+=tags
-
-" =========== Status Line ========
-let g:airline_powerline_fonts = 1
-let g:airline_section_b = ''
-
-" =========== RSpec ==============
-let g:rspec_command = 'call Send_to_Tmux("bundle exec rspec {spec}\n")'
-" =========== NERDTree ===========
-let NERDTreeShowHidden=1 " show dotfiles
-" =========== Fugitive ===========
-autocmd QuickFixCmdPost *grep* cwindow " open Quickfix window after Ggrep
-
-" for vim-textobj-ruby
-runtime macros/matchit.vim
-
-" load mappings
-so ~/.vim/bundle/mappings.vim
-
-" highlight .ejs templates
-au BufNewFile,BufRead *.ejs set filetype=html

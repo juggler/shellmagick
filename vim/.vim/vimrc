@@ -1,0 +1,6 @@
+set nocompatible
+
+so ~/.vim/config/init.vim
+so ~/.vim/config/general.vim
+so ~/.vim/config/plugin_settings.vim
+so ~/.vim/config/mappings.vim
