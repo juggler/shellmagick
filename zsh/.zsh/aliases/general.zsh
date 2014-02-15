@@ -1,0 +1,5 @@
+alias _='sudo'
+alias o='open'
+alias mkdir='mkdir -p'
+alias f='fg'
+alias ls='ls -lh -A'
