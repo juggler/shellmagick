@@ -79,5 +79,5 @@ alias mxkill='tmux kill-server'
 
 # brew ===============================================
 alias bri='brew install'
-alias bru='brew udpate'
+alias bru='brew update'
 alias brug='brew upgrade'
