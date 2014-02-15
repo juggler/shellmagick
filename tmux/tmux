@@ -1,0 +1,3 @@
+#!/bin/sh
+
+TERM=screen-256color-bce /usr/local/Cellar/tmux/1.8/bin/tmux

@@ -12,6 +12,22 @@ setopt AUTO_CD
 # Colour support
 autoload -U colors && colors
 
+# Vi mode
+bindkey -v
+
+# helpful keymaps
+bindkey '^P' up-history
+bindkey '^N' down-history
+bindkey '^?' backward-delete-char
+bindkey '^h' backward-delete-char
+bindkey '^w' backward-kill-word
+# bring back backward searching
+bindkey '^R' history-incremental-search-backward
+
+# By default, there is a 0.4 second delay after you hit the <ESC> key and when the mode change is registered. 
+# Let's reduce this delay to 0.1 seconds.
+export KEYTIMEOUT=1
+
 # =========== COMPLETION ===========
 # init completion
 autoload -U compinit
@@ -48,19 +64,29 @@ setopt COMPLETEALIASES       # Complete aliased commands
 # =========== HISTORY ===========
 # prevent from putting duplicate lines in the history
 setopt HIST_IGNORE_DUPS
+setopt inc_append_history
+setopt share_history
 # =========== PATH ===========
 # do not add anything to $path if it's there already
 typeset -U path
-path=($path)
+path=(/usr/local/bin $path)
 
 # =========== RBENV ===========
 # to enable shims and autocompletion for rbenv
 eval "$(rbenv init -)"
 
 # =========== ALIASES ===========
+alias git="gh"
 alias pas="ruby lib/pas.rb"
 alias ls="ls -aG"
 source ~/.zsh/aliases/git.zsh
 source ~/.zsh/aliases/ruby.zsh
 source ~/.zsh/aliases/rails.zsh
+
 alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+alias tmux="TERM=screen-256color-bce tmux"
+
+export CLASSPATH=$CLASSPATH:.
+
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+export JAVA_HOME=`/usr/libexec/java_home -v 1.7`

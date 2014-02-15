@@ -48,7 +48,7 @@ prompt_setup() {
   # left prompt
 	PROMPT='%F{blue}%~%f %F{magenta}❯%f '
 	# right prompt
-	RPROMPT='%F{8}${vcs_info_msg_0_} %f'
+	RPROMPT='%F{blue}${vcs_info_msg_0_} %f'
 }
 
 prompt_setup "$@"

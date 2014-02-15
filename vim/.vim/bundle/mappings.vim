@@ -46,3 +46,23 @@ map <C-t> :tabnew<CR>
 imap <C-t> <ESC>:tabnew<CR>
 nmap <Tab> gt
 nmap <S-Tab> gT
+
+" tags
+nnoremap <C-\> :pop<CR> " pop tag stack
+nmap <silent> <leader>rt :!/usr/local/bin/ctags -R --tag-relative -f ./.git/tags .<CR>
+"nmap <silent> <leader>rt :!ripper-tags -R --tag-relative -f ./.git/tags .<CR>
+"map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR> " open definition in a new window
+map <C-]> :exec("ptag ".expand("<cword>"))<CR> " open definition in a vertical split
+"map <C-]> :vsp <CR>:exec("tjump ".expand("<cword>"))<CR> " open definition in a vertical split
+nmap <leader>tb :TagbarToggle<CR>
+
+" path to the current file (mac os only)
+nmap <leader>p :!echo % \| pbcopy<CR>
+
+map <leader>e :NERDTreeTabsToggle<CR>
+
+" vim-rspec mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>n :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>"
