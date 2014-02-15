@@ -63,9 +63,13 @@ setopt COMPLETEALIASES       # Complete aliased commands
 
 # =========== HISTORY ===========
 # prevent from putting duplicate lines in the history
-setopt HIST_IGNORE_DUPS
+export HISTSIZE=5000
+export HISTFILE=~/.zsh_history
+export SAVEHIST=$HISTSIZE
+setopt append_history
 setopt inc_append_history
 setopt share_history
+setopt hist_ignore_dups
 # =========== PATH ===========
 # do not add anything to $path if it's there already
 typeset -U path
