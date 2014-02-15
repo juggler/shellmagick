@@ -96,3 +96,8 @@ export CLASSPATH=$CLASSPATH:.
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+
+# Makes git auto completion faster favouring for local completions
+__git_files () {
+    _wanted files expl 'local files' _files
+}
