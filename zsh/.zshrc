@@ -18,8 +18,8 @@ bindkey -v
 # helpful keymaps
 bindkey '^P' up-history
 bindkey '^N' down-history
-bindkey '^?' backward-delete-char
-bindkey '^h' backward-delete-char
+bindkey '^a' beginning-of-line
+bindkey '^e' end-of-line
 bindkey '^w' backward-kill-word
 # bring back backward searching
 bindkey '^R' history-incremental-search-backward
