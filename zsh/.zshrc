@@ -14,6 +14,8 @@ autoload -U colors && colors
 
 # Vi mode
 bindkey -v
+export EDITOR=vim
+export VISUAL=vim
 
 # helpful keymaps
 bindkey '^P' up-history
