@@ -82,15 +82,7 @@ path=(/usr/local/bin $path)
 eval "$(rbenv init -)"
 
 # =========== ALIASES ===========
-alias git="gh"
-alias pas="ruby lib/pas.rb"
-alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
-alias tmux="TERM=screen-256color-bce tmux"
-
-source ~/.zsh/aliases/general.zsh
-source ~/.zsh/aliases/git.zsh
-source ~/.zsh/aliases/ruby.zsh
-source ~/.zsh/aliases/rails.zsh
+source ~/.zsh/aliases.zsh
 
 export CLASSPATH=$CLASSPATH:.
 
