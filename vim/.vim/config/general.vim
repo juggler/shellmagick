@@ -19,6 +19,20 @@ set clipboard=unnamed
 " disable paste mode when leaving Insert Mode
 au InsertLeave * set nopaste
 
+" strip trailing whitespaces
+autocmd BufWritePre * :%s/\s\+$//e
+augroup Whitespace
+  autocmd!
+  " Remove trailing whitespace
+  function! s:StripTrailingWhitespace()
+    normal mZ
+    %s/\s\+$//e
+    normal 'Z
+  endfunction
+
+  au BufWritePre <buffer> :silent! call <SID>StripTrailingWhitespace()
+augroup END
+
 " Make sure you put this _before_ the ":syntax enable" command,
 " otherwise the colors will already have been set
 set background=light

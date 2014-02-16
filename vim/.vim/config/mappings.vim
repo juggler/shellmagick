@@ -17,8 +17,8 @@ nmap <leader>w :w!<CR>
 nnoremap <leader>q :q<CR>
 nnoremap ; :
 inoremap jj <esc>
-command W w
-command Q q
+nmap W w
+nmap Q q
 
 " restore messed up vim
 map <F5> :redraw! \| :noh \| <CR><C-w>=
