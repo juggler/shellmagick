@@ -140,3 +140,6 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 __git_files () {
     _wanted files expl 'local files' _files
 }
+
+# quote things which look like url
+autoload -U url-quote-magic && zle -N self-insert url-quote-magic
