@@ -39,10 +39,6 @@ noremap H ^
 nnoremap L $
 vnoremap L $h
 
-" Reselect visual block after indent/outdent
-vnoremap < <gv
-vnoremap > >gv
-
 " window navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j

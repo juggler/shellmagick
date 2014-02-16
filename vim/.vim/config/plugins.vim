@@ -34,6 +34,8 @@ Bundle 'jgdavey/tslime.vim'
 Bundle 'christoomey/vim-tmux-navigator'
 " comment all shit
 Bundle 'scrooloose/nerdcommenter'
+" personal wiki
+Bundle 'vimwiki/vimwiki'
 
 " ====================================================
 " Ruby & Rails =======================================
