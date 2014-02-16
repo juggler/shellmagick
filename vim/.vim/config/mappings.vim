@@ -100,7 +100,7 @@ nmap <Leader>gb :Gbrowse<CR>
 nmap <Leader>gg :Ggrep<Space>
 
 " Gitv
-" nmap <Leader>gv :Gitv<CR>
+nmap <Leader>gv :Gitv<CR>
 
 " Tags
 nmap <silent> <leader>rt :!/usr/local/bin/ctags -R .<CR>

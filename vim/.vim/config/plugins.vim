@@ -27,6 +27,7 @@ Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'majutsushi/tagbar'
 " git
 Bundle 'tpope/vim-fugitive'
+Bundle 'gregsexton/gitv'
 " send to tmux function
 Bundle 'jgdavey/tslime.vim'
 " seamlessly Navigate Vim and tmux Splits

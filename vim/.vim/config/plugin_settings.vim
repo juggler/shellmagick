@@ -14,5 +14,8 @@ autocmd QuickFixCmdPost *grep* cwindow " open Quickfix window after Ggrep
 " =========== vim-textobj-ruby ===
 runtime macros/matchit.vim
 
+" =========== Gitv ===============
+let g:Gitv_DoNotMapCtrlKey = 1
+
 " =========== autoload ===========
 au BufNewFile,BufRead *.ejs set filetype=html " highlight .ejs templates
