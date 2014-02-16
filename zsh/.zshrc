@@ -112,7 +112,7 @@ zstyle ':completion:*:*:kill:*' insert-ids single
 
 # =========== HISTORY ===========
 # prevent from putting duplicate lines in the history
-export HISTSIZE=5000
+export HISTSIZE=10000
 export HISTFILE=~/.zsh_history
 export SAVEHIST=$HISTSIZE
 setopt append_history

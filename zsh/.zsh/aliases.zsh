@@ -14,6 +14,8 @@ alias e='${(z)VISUAL:-${(z)EDITOR}}'
 alias psg="ps aux | grep "
 alias cls='clear'
 alias flush="dscacheutil -flushcache"
+# Lists the ten most used commands.
+alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r | head"
 
 # vimrc editing
 alias ve='vim ~/.vimrc'
@@ -85,3 +87,20 @@ alias mxkill='tmux kill-server'
 alias bri='brew install'
 alias bru='brew update'
 alias brug='brew upgrade'
+
+# quick jump functions ===============================
+acl() {
+  cd ~/Projects/acl/$1;
+}
+compctl -W ~/Projects/acl -/ acl
+
+fs() {
+  cd ~/Projects/fs/$1;
+}
+compctl -W ~/Projects/fs -/ fs
+
+compdef -d play
+play() {
+  cd ~/Projects/play/$1;
+}
+compctl -W ~/Projects/play -/ play
