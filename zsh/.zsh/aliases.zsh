@@ -22,6 +22,10 @@ alias ve='vim ~/.vimrc'
 alias ze='vim ~/.zshrc'
 alias zr='source ~/.zshrc'
 
+# tmux conf editing
+alias te='vim ~/.tmux.conf'
+alias tr='tmux source-file ~/.tmux.conf'
+
 # Alias Editing
 alias ae='vim ~/.zsh/aliases.zsh'    # alias edit
 alias ar='source ~/.zsh/aliases.zsh' # alias reload
