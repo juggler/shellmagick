@@ -36,6 +36,10 @@ Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'scrooloose/nerdcommenter'
 " personal wiki
 Bundle 'vimwiki/vimwiki'
+" play nicely with iTerm2 and tmux
+" switching the cursor to a bar shaped one when in insert mode, and restoring
+" it when not
+Bundle 'sjl/vitality.vim'
 
 " ====================================================
 " Ruby & Rails =======================================
