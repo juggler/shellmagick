@@ -46,7 +46,7 @@ alias grp='git rebase -p'
 compdef _git grp=git-rebase
 alias gra='git rebase --abort'
 alias grc='git rebase --continue'
-alias gl='git l'
+alias gl='git log'
 alias gf='git fetch'
 alias gd='git diff'
 compdef _git gd=git-diff
@@ -76,6 +76,7 @@ alias mi='be rake db:migrate db:test:prepare'
 
 # ruby ===============================================
 alias bi='bundle install'
+alias bu='bundle update'
 alias be='bundle exec'
 
 # tmux ===============================================
