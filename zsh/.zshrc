@@ -132,6 +132,9 @@ typeset -gU cdpath fpath mailpath path
 # =========== ALIASES ===========
 source ~/.zsh/aliases.zsh
 
+# ruby settings
+source ~/.zsh/ruby.zsh
+
 export CLASSPATH=$CLASSPATH:.
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
