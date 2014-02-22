@@ -1,7 +1,7 @@
 # bins ==============================================
 alias git="gh"
 alias pas="ruby lib/pas.rb"
-alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+alias vim='/Applications/MacVim.app/Contents/MacOS/Vim -w ~/.vimlog "$@"'
 alias tmux="TERM=xterm-256color tmux"
 
 # General ============================================
