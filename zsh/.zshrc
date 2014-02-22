@@ -26,7 +26,7 @@ bindkey '^w' backward-kill-word
 # bring back backward searching
 bindkey '^R' history-incremental-search-backward
 
-# By default, there is a 0.4 second delay after you hit the <ESC> key and when the mode change is registered. 
+# By default, there is a 0.4 second delay after you hit the <ESC> key and when the mode change is registered.
 # Let's reduce this delay to 0.1 seconds.
 export KEYTIMEOUT=1
 
@@ -120,13 +120,14 @@ setopt inc_append_history
 setopt share_history
 setopt hist_ignore_dups
 # =========== PATH ===========
-# do not add anything to $path if it's there already
-typeset -U path
 path=(/usr/local/bin $path)
 
 # =========== RBENV ===========
 # to enable shims and autocompletion for rbenv
 eval "$(rbenv init -)"
+
+# do not add anything to $path if it's there already
+typeset -gU cdpath fpath mailpath path
 
 # =========== ALIASES ===========
 source ~/.zsh/aliases.zsh
