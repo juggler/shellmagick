@@ -49,6 +49,8 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'slim-template/vim-slim'
 Bundle 'thoughtbot/vim-rspec'
 
+Bundle 'AndrewRadev/splitjoin.vim'
+
 Bundle 'tpope/vim-endwise'
 
 Bundle 'kana/vim-textobj-user'

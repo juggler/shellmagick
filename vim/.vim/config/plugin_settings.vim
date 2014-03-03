@@ -19,3 +19,10 @@ let g:Gitv_DoNotMapCtrlKey = 1
 
 " =========== autoload ===========
 au BufNewFile,BufRead *.ejs set filetype=html " highlight .ejs templates
+
+" =========== SplitJoin ==========
+let g:splitjoin_split_mapping = ''
+let g:splitjoin_join_mapping = ''
+
+nmap sj :SplitjoinSplit<cr>
+nmap sk :SplitjoinJoin<cr>
