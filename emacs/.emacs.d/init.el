@@ -4,6 +4,9 @@
 ;; http://www.emacswiki.org/emacs/AlarmBell
 (setq ring-bell-function 'ignore)
 
+;; Indent after creating a newline
+(define-key global-map (kbd "RET") 'newline-and-indent)
+
 ;; Highlight current line
 (global-hl-line-mode 1)
 
@@ -19,6 +22,10 @@
 
 ;; Show column-number in the mode line
 (column-number-mode 1)
+
+;; Enable IDO
+(ido-mode t)
+(setq ido-enable-flex-matching t)
 
 ;; Make Text mode the default mode for new buffers
 (setq default-major-mode 'text-mode)
@@ -39,3 +46,5 @@
 (load-theme 'solarized-light t)
 
 (global-rbenv-mode)
+
+(setf inhibit-splash-screen t)
