@@ -3,3 +3,5 @@ vim/.vim/bundle
 emacs/.emacs.d/elpa
 emacs/.emacs.d/auto-save-list
 emacs/.emacs.d/eshell
+emacs/.emacs.d/projectile-bookmarks.eld
+.cask

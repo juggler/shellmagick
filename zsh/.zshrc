@@ -120,7 +120,7 @@ setopt inc_append_history
 setopt share_history
 setopt hist_ignore_dups
 # =========== PATH ===========
-path=(/usr/local/bin $path)
+path=(/usr/local/bin ~/.cask/bin $path)
 
 # =========== RBENV ===========
 # to enable shims and autocompletion for rbenv
