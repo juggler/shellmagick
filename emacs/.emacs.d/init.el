@@ -4,11 +4,15 @@
 ;; http://www.emacswiki.org/emacs/AlarmBell
 (setq ring-bell-function 'ignore)
 
-;; In every buffer, the line which contains the cursor will be fully highlighted
+;; Highlight current line
 (global-hl-line-mode 1)
 
-;; Prevent Emacs from making backup files
+;; Prevent Emacs from making backup and autosave files
 (setq make-backup-files nil)
+(setq auto-save-default nil)
+
+;; Display line numbers in margin
+(global-linum-mode 1)
 
 ;; Show line-number in the mode line
 (line-number-mode 1)
@@ -25,6 +29,8 @@
 
 (set-default-font "Droid Sans Mono 12")
 
+(setq rbenv-show-active-ruby-in-modeline nil)
+
 (require 'package)
 (add-to-list 'package-archives
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
@@ -33,6 +39,3 @@
 (load-theme 'solarized-light t)
 
 (global-rbenv-mode)
-(setq rbenv-show-active-ruby-in-modeline nil)
-;; this will remove the colors
-(setq rbenv-modeline-function 'rbenv--modeline-plain)
