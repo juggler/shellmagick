@@ -3,7 +3,18 @@
 
 (depends-on "solarized-theme")
 (depends-on "powerline")
+
 (depends-on "evil")
+
 (depends-on "projectile")
 (depends-on "flx-ido")
 (depends-on "smex")
+(depends-on "etags-select")
+
+(depends-on "smart-tab")
+(depends-on "smartparens")
+
+(depends-on "rbenv")
+(depends-on "rspec-mode")
+
+(depends-on "magit")

@@ -41,6 +41,7 @@
                           (lhs (list (powerline-raw evil-mode-line-tag face1 'l)
                                      (funcall separator-left face1 face4)
                                      (powerline-buffer-id face4 'l)
+                                     (powerline-raw " " face4)
                                      (funcall separator-left face4 face3)
                                      (powerline-major-mode face3 'l)
                                      (powerline-process face3)

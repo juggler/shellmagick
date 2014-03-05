@@ -1,4 +1,5 @@
 (projectile-global-mode)
+(global-set-key [C-s-268632080] 'projectile-switch-project)
 
 (ido-mode 1)
 (flx-ido-mode 1)
@@ -16,6 +17,20 @@
 
 (add-hook 'ido-setup-hook 'ido-define-keys)
 
+; ctags
+(defun visit-project-tags ()
+  (if (file-exists-p "TAGS")
+    (visit-tags-table "TAGS")))
+
+(add-hook 'projectile-mode-hook 'visit-project-tags)
+
+(require 'etags-select)
+(global-set-key (kbd "s-]") 'etags-select-find-tag-at-point)
+(global-set-key (kbd "s-[") 'pop-tag-mark)
+
 (global-set-key (kbd "s-t") 'projectile-find-file)
+
+(setq path-to-ctags "/usr/local/bin/ctags")
+
 
 (provide 'extended-editor)

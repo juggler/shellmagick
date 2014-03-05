@@ -3,7 +3,7 @@ alias git="gh"
 alias pas="ruby lib/pas.rb"
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim -w ~/.vimlog "$@"'
 #alias emacs="/usr/local/Cellar/emacs/24.3/Emacs.app/Contents/MacOS/Emacs -nw"
-alias emacs="open -a Emacs"
+#alias emacs="open -a Emacs"
 alias tmux="TERM=xterm-256color tmux"
 
 # General ============================================
