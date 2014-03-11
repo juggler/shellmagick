@@ -46,6 +46,11 @@
 
 ; smart parens
 (require 'smartparens-config)
-; endwise?
+(smartparens-global-mode t)
+(setq sp-autoescape-string-quote nil)
+(turn-on-smartparens-strict-mode)
+
+;; highlights matching pairs
+(show-smartparens-global-mode t)
 
 (provide 'editor)

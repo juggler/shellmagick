@@ -1,6 +1,6 @@
-(source marmalade)
 (source melpa)
 
+(depends-on "pallet")
 (depends-on "solarized-theme")
 (depends-on "powerline")
 
@@ -11,10 +11,21 @@
 (depends-on "smex")
 (depends-on "etags-select")
 
+(depends-on "phi-search")
+(depends-on "multiple-cursors")
+
 (depends-on "smart-tab")
 (depends-on "smartparens")
 
 (depends-on "rbenv")
 (depends-on "rspec-mode")
 
+(depends-on "coffee-mode")
+
 (depends-on "magit")
+(depends-on "gitconfig-mode")
+(depends-on "gitignore-mode")
+
+(depends-on "jabber")
+
+(depends-on "markdown-mode")

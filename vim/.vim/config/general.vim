@@ -7,6 +7,7 @@ set autoread                   " reload files changed outside vim
 set visualbell
 set showcmd
 set showmode
+set wildmenu
 
 " highlight the current line
 set cul

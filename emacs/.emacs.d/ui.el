@@ -10,6 +10,7 @@
   (when (fboundp mode) (funcall mode -1)))
 
 (set-default-font "Droid Sans Mono 12")
+(set-fontset-font "fontset-default" 'unicode "Droid Sans Mono")
 
 ;; highlight current line
 (global-hl-line-mode 1)

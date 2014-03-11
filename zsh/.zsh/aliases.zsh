@@ -71,7 +71,7 @@ alias production-deploy='git push -f production master'
 
 # rails ==============================================
 alias rs='be rails s'
-alias rs='be rails c'
+alias rc='be rails c'
 alias ss='./script/rails s'
 alias sc='./script/rails c'
 alias mi='be rake db:migrate db:test:prepare'

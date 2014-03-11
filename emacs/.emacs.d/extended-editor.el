@@ -1,3 +1,5 @@
+(require 'multiple-cursors-config)
+
 (projectile-global-mode)
 (global-set-key [C-s-268632080] 'projectile-switch-project)
 
@@ -17,6 +19,8 @@
 
 (add-hook 'ido-setup-hook 'ido-define-keys)
 
+(global-set-key (kbd "s-F") 'projectile-grep)
+
 ; ctags
 (defun visit-project-tags ()
   (if (file-exists-p "TAGS")
@@ -31,6 +35,5 @@
 (global-set-key (kbd "s-t") 'projectile-find-file)
 
 (setq path-to-ctags "/usr/local/bin/ctags")
-
 
 (provide 'extended-editor)
