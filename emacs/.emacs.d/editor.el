@@ -18,16 +18,12 @@
 (setq tab-width 2)
 
 (setq ruby-indent-level 2)
+;; coffee-mode should indent 2 spaces everywhere
+(setq coffee-tab-width 2)
+
 (require 'rbenv)
 (setq rbenv-show-active-ruby-in-modeline nil)
 (global-rbenv-mode)
-
-;; show matching parens in bold with inverted background
-(show-paren-mode 1)
-(setq show-paren-delay 0)
-(set-face-background 'show-paren-match-face nil)
-(set-face-foreground 'show-paren-match-face nil)
-(set-face-attribute 'show-paren-match-face nil :weight 'extra-bold)
 
 (global-set-key (kbd "RET") 'newline-and-indent)
 
