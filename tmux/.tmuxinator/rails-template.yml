@@ -1,0 +1,16 @@
+# ~/.tmuxinator/rails-template.yml
+
+name: project-name
+root: ~/Projects/
+tmux_command: "TERM=xterm-256color tmux"
+
+windows:
+  - project-name[3000]:
+      panes:
+        - bundle exec rails s -p 3000
+  - project-name[vim]:
+      panes:
+        - vim
+  - project-name[shell]:
+      panes:
+        - git fetch

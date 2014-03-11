@@ -1,0 +1,13 @@
+# ~/.tmuxinator/gem-template.yml
+
+name: gem
+root: ~/Projects/
+tmux_command: "TERM=xterm-256color tmux"
+
+windows:
+  - gem[vim]:
+      panes:
+        - vim
+  - gem:
+      panes:
+        - git fetch
