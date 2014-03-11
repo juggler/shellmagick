@@ -1,4 +1,4 @@
-# ~/.tmuxinator/rails-template.yml
+# ~/.tmuxinator/project-name.yml
 
 name: project-name
 root: ~/Projects/

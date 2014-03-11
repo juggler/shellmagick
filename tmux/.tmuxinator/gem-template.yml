@@ -1,4 +1,4 @@
-# ~/.tmuxinator/gem-template.yml
+# ~/.tmuxinator/gem.yml
 
 name: gem
 root: ~/Projects/
