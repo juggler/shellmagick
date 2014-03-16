@@ -126,6 +126,9 @@ path=(/usr/local/bin ~/.cask/bin $path)
 # to enable shims and autocompletion for rbenv
 eval "$(rbenv init -)"
 
+# fs-tool
+eval "$(fs init -)"
+
 # do not add anything to $path if it's there already
 typeset -gU cdpath fpath mailpath path
 

@@ -10,7 +10,7 @@ alias tmux="TERM=xterm-256color tmux"
 alias _='sudo'
 alias o='open'
 alias mkdir='mkdir -p'
-alias f='fg'
+alias f='fs'
 alias ls='ls -lh -A -G'
 alias e='${(z)VISUAL:-${(z)EDITOR}}'
 alias psg="ps aux | grep "
