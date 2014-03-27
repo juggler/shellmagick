@@ -7,3 +7,6 @@
 [submodule "zsh/pure"]
 	path = zsh/pure
 	url = https://github.com/juggler/pure.git
+[submodule "emacs/mimicry"]
+	path = emacs/mimicry
+	url = https://github.com/juggler/mimicry.git

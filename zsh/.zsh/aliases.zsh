@@ -10,7 +10,7 @@ alias tmux="TERM=xterm-256color tmux"
 alias _='sudo'
 alias o='open'
 alias mkdir='mkdir -p'
-alias f='fs'
+alias f='/usr/local/Cellar/fs-tool/1.5.0/bin/fs'
 alias ls='ls -lh -A -G'
 alias e='${(z)VISUAL:-${(z)EDITOR}}'
 alias psg="ps aux | grep "
@@ -71,7 +71,7 @@ alias production-deploy='git push -f production master'
 
 # rails ==============================================
 alias rs='be rails s'
-alias rc='be rails c'
+#alias rc='be rails c'
 alias ss='./script/rails s'
 alias sc='./script/rails c'
 alias mi='be rake db:migrate db:test:prepare'
@@ -83,6 +83,13 @@ alias be='bundle exec'
 
 # tmux ===============================================
 alias mxa='tmux attach-session -t'
+function __tmux-sessions() {
+  local expl
+  local -a sessions
+  sessions=( ${${(f)"$(command tmux list-sessions)"}/:[ $'\t']##/:} )
+  _describe -t sessions 'sessions' sessions "$@"
+}
+compdef __tmux-sessions mxa
 alias mxl='tmux list-sessions'
 alias mxkill='tmux kill-server'
 
